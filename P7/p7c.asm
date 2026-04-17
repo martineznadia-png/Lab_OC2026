@@ -7,11 +7,10 @@ section	.text
 
 _start:
 
-mov cx, 0x3F48
-mov ax,cx
-shl ax, 3
-call pHex_w      ;imprime en hexadecimal
-;call pBin_w        ;imprime en binario
+mov esi, 0x20D685F3
+and esi, 0x60D495E2
+;call pHex_w      ;imprime en hexadecimal
+call pBin_w        ;imprime en binario
 
 mov al,10	; cambio de linea
 call putchar
