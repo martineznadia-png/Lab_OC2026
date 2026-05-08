@@ -9,4 +9,5 @@ suma:
     mov ecx, [ebx+8]
     mov eax, [ebx+12]
 
-    
+    add ecx, eax
+    ret
